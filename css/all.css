@@ -56,7 +56,6 @@ img{
     height: auto;
 }
 /* css reset end */
-
 body {
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
     font-size: 24px;
@@ -65,13 +64,13 @@ body {
 }
 
 /* 標題設定 */
-h1 {
+.title {
     font-size: 80px;
     line-height: 94px;
     font-weight: 900;
     margin-bottom: 32px;
 }
-.title {
+.subtitle {
     font-size: 64px;
     line-height: 75px;
     font-weight: 500;
@@ -143,6 +142,9 @@ h1 {
     display: flex;
     justify-content: center;
 }
+.align-center {
+    align-items: center;
+}
 .flex-between {
     display: flex;
     justify-content: space-between;   
@@ -174,8 +176,10 @@ h1 {
 /* header */
 .header {
     background-image: url(../img/header\ bg-img.png);
-    padding-top: 356px;
-    padding-bottom: 256px;
+    height: 100vh;
+}
+.icon-img {
+    display: block;
 }
 /* about */
 .about-info li:last-of-type::after {
@@ -215,11 +219,8 @@ h1 {
 .work-list-item:first-child {
     margin-top: -80px;
 }
-.work-list-item img {
+.work-img {
     display: block;
     margin-bottom: 16px;
-}
-.work-list span {
-    font-style: italic;
 }
 /* contact */
